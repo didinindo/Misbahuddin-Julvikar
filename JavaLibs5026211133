@@ -1,0 +1,45 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class JavaLibs5026211133 {
+
+    public static void main(String[] args) {
+      Scanner input = new Scanner(System.in);
+
+      System.out.println("Hello welcome to Hokky Online Fruit Store please enter your bio before ordering fruit");
+      System.out.println("Today's stock update, only apples, bananas, and yogurts are left, sorry for the inconvenience");
+
+      System.out.println("What is your name?");
+      String name = input.next();
+
+      System.out.println("Please write delivery address");
+      String address = input.next();
+
+      System.out.println("how much yogurt would you like to buy?");
+      int yogurt = input.nextInt();
+
+      System.out.println("How many kilos of apples would you like to order?");
+      double apples = input.nextDouble();
+
+      System.out.println("how many kilos of bananas would you like to order");
+      double bananas = input.nextDouble();
+
+      System.out.println("Are your groceries right and proceed to checkout?(true/false)");
+      boolean checkout = input.nextBoolean();
+
+      System.out.println("Before we proceed to checkout, prove that you are not a robot!");
+
+      System.out.println("How many groceries did you buy in total?");
+      int itemammount = input.nextInt();
+
+      System.out.println("How many kilograms of groceries did you order?");
+      double itemkilos = input.nextDouble();
+
+      System.out.println("Here is your purchase receipt");
+      System.out.println("Package contains of "+yogurt+" yogurts, "+apples+" kilograms of apples, "+bananas+" kilograms of bananas");
+      System.out.println("Will be sent to "+name+" at "+address+"");
+      System.out.println("Thank you for shopping at our store, have a nice day!");
+
+    }
+}
